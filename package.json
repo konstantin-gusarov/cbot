@@ -1,0 +1,16 @@
+{
+  "name": "smart-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro-bot -t 1192516680:AAFvpYgQWMcNnFj6wHJhXW1RfTdbBT4Mi8M -p 7000"
+  },
+  "author": "Konstantin Gusarov <k.gusarov@magdv.com>",
+  "license": "MIT",
+  "dependencies": {
+    "micro-bot": "^2.5.3"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
