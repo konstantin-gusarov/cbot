@@ -14,6 +14,9 @@ RUN npm install
 # Копирование файлов проекта
 COPY . .
 
+# Устанавливаем зависимости, собираем проект и удаляем зависимости
+RUN npm install --production && npm run build:production && rm -rf node_module
+
 # Уведомление о порте, который будет прослушивать работающее приложение
 EXPOSE 7000
 
