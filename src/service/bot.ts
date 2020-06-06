@@ -30,7 +30,7 @@ export const bookmark = ({ reply, match }: TelegrafContext) => {
 
 export const callback = ({ reply, update }: TelegrafContext) => {
   const { siteUrl } = scope;
-  const { callback_query: data } = update;
+  const { callback_query } = update;
 
-  reply(`Added "${siteUrl}" to category "${data}"!`);
+  reply(`Added "${siteUrl}" to category "${callback_query?.data}"!`);
 };
