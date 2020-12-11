@@ -8,8 +8,6 @@ WORKDIR ${APP_DIR}
 # Установка зависимостей
 COPY package*.json ./
 RUN npm install
-# Для использования в продакшне
-# RUN npm install --production
 
 # Копирование файлов проекта
 COPY . .
@@ -18,7 +16,7 @@ COPY . .
 RUN npm install --production && npm run build:production && rm -rf node_module
 
 # Уведомление о порте, который будет прослушивать работающее приложение
-EXPOSE 7000
+EXPOSE 7070
 
 # Запуск проекта
-CMD ["npm", "start"]
+CMD ["npm", "starst"]

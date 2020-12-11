@@ -4,7 +4,7 @@
   "main": "build/index.min.js",
   "scripts": {
     "build:production": "rollup -c",
-    "start": "micro-bot -t 1192516680:AAFvpYgQWMcNnFj6wHJhXW1RfTdbBT4Mi8M -p 7000",
+    "start": "rollup -c && micro-bot -t 1192516680:AAFvpYgQWMcNnFj6wHJhXW1RfTdbBT4Mi8M -p 7070",
     "start:dev": ""
   },
   "author": "Konstantin Gusarov <k.gusarov@magdv.com>",
